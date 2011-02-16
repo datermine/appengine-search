@@ -1,2 +1,7 @@
 *.pyc
+*.pydevproject
+git.helper.*
+.settings
+*wurfl*.xml
 .DS_Store
+
