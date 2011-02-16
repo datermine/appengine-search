@@ -52,7 +52,7 @@ from google.appengine.api.labs import taskqueue
 try:
     from search.pyporter2 import Stemmer
 except:
-    from standards.lib.pyproter2 import Stemmer
+    from standards.lib.pyporter2 import Stemmer
 
 class Error(Exception):
     """Base search module error type."""
