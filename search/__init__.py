@@ -472,7 +472,7 @@ class Searchable(object):
         for prop_name, prop_value in self.properties().iteritems():
             if (not self.INDEX_ONLY) or (prop_name in self.INDEX_ONLY):
                 values = prop_value.get_value_for_datastore(self)
-                if not isinstance(values, list):
+                if not isinstance(values, list) or len(values) == 0:
                     values = [values]
                 if (isinstance(values[0], basestring) and
                         not isinstance(values[0], datastore_types.Blob)):
